@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Play:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Play", sans-serif;
+    font-size: 3.5rem;
+    margin: 40px auto;
+    padding: 5px;
+    text-align: center;
+}
