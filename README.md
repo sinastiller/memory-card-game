@@ -22,3 +22,10 @@
     * [Content](#content)
     * [Media](#media)
     * [Acknowledgements](#acknowledgements)
+
+### [Wireframes](#wireframes)
+I have used [Adobe XD](https://www.adobe.com/ie/products/xd.html) to create the wireframe for my Memory Card Game. It should have the main title at the top of the page, followed by the number of moves a user has left to find matching cards. Below this section you will find the cards, the user will flip. Between the card-section and the footer will be the result shown to the user, if they have won or lost the game.
+
+This is my inital approach towards my project, which might change during the process of it.
+
+![Wireframes](readme-images/wireframe.memory-card-game.png)
