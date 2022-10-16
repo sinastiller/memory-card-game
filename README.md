@@ -35,10 +35,11 @@ This is my inital approach towards my project, which might change during the pro
 ## [Technologies Used](#technologies-used)
 
 ### [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used)
+* [SheCodes](https://gradients.shecodes.io/) to add a background using linear-gradient.
 * [Convertio](https://convertio.co/download/) to convert images to .webp .
 
 ## [Credits](#credits)
 
 ### [Code Used](#code-used)
- * [W3Schools](https://www.w3schools.com/cssref/css3_pr_transform-style.asp) was referred to, to preserve the 3D style while rotating an element; it must be always used in conjunction with the transform property.
- * [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_class.asp) helped me research how to toggle beetween adding and removing a class attribute to an element.
+* [W3Schools](https://www.w3schools.com/cssref/css3_pr_transform-style.asp) was referred to, to preserve the 3D style while rotating an element; it must be always used in conjunction with the transform property.
+* [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_class.asp) helped me research how to toggle beetween adding and removing a class attribute to an element.
