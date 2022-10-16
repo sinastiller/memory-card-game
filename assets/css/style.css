@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&family=Play:wght@700&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
     background-image: url(/assets/images/background.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,7 +13,14 @@ body {
 h1 {
     font-family: "Play", sans-serif;
     font-size: 3.5rem;
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 5px;
     text-align: center;
+}
+
+section {
+    font-family: "Changa", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
