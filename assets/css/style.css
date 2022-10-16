@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&family=Play:wght@700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+body {
+    background-image: url(/assets/images/background.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
 }
 
 h1 {
