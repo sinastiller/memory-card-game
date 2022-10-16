@@ -43,3 +43,13 @@ This is my inital approach towards my project, which might change during the pro
 ### [Code Used](#code-used)
 * [W3Schools](https://www.w3schools.com/cssref/css3_pr_transform-style.asp) was referred to, to preserve the 3D style while rotating an element; it must be always used in conjunction with the transform property.
 * [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_class.asp) helped me research how to toggle beetween adding and removing a class attribute to an element.
+
+## [Media](#media)
+* [Max](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Max-Mayfield-stranger-things-42982418-800-1066.jpg)
+* [Billy](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Billy-Hargrove-stranger-things-42982416-300-400.jpg)
+* [Lucas](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Lucas-Sinclair-stranger-things-42982412-300-400.jpg)
+* [Mike](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Mike-Wheeler-stranger-things-42982413-300-400.jpg)
+* [Dustin](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Dustin-Henderson-stranger-things-42982415-300-400.jpg)
+* [Will](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Will-Byers-stranger-things-42982414-300-400.jpg)
+* [Eleven](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Eleven-stranger-things-42982419-800-1000.jpg)
+* [Steve](https://media.vanityfair.com/photos/5d1cbc641c225a00086f40d3/2:3/w_665,h_998,c_limit/steve-harrington-stranger-things.jpg)
