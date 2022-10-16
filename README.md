@@ -36,7 +36,7 @@ This is my inital approach towards my project, which might change during the pro
 
 ### [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used)
 * [SheCodes](https://gradients.shecodes.io/) to add a background using linear-gradient.
-* [Convertio](https://convertio.co/download/) to convert images to .webp .
+* [Convertio](https://convertio.co/download/) and [CloudConvert](https://cloudconvert.com/jpg-to-webp) to convert images to .webp .
 
 ## [Credits](#credits)
 
