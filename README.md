@@ -43,6 +43,7 @@ This is my inital approach towards my project, which might change during the pro
 ### [Code Used](#code-used)
 * [W3Schools](https://www.w3schools.com/cssref/css3_pr_transform-style.asp) was referred to, to preserve the 3D style while rotating an element; it must be always used in conjunction with the transform property.
 * [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_class.asp) helped me research how to toggle beetween adding and removing a class attribute to an element.
+* [W3Schools](https://www.w3schools.com/js/js_arrow_function.asp) was referred to, to understand how arrow functions work.
 
 ## [Media](#media)
 * [Max](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Max-Mayfield-stranger-things-42982418-800-1066.jpg)
