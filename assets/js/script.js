@@ -3,12 +3,10 @@ const gameSection = document.getElementById("game-section");
 const playerMovesLeft = document.getElementById("playerMovesLeft");
 const playerMoves = 8;
 
-
-
 playerMovesLeft.textContent = playerMoves;
 
 // Generating the image data
-const imageData  =  [ {
+const imageData = [{
         imgSrc: "../assets/images/billy.webp",
         name: "billy"
     },
@@ -75,32 +73,40 @@ const imageData  =  [ {
 ];
 
 // Get cards in no particular order
-const randomizeData = () => {
+function randomizeData() {
     const cardData = imageData;
-    cardData.sort(() => 0.5 - Math.random());
+    cardData.sort(() => Math.random() - 0.5);
+
     return cardData;
 };
 
-//Create Game Board Function
-for (let i = 0; i < imageData.length; i++) {
+function shuffleCards() {
+    const cardData = randomizeData();
 
-    //console.log(imageData[i], 'instance');
-    const card = document.createElement("div");
-    const frontFace = document.createElement("img");
-    const backFace = document.createElement("div");
+    //Create Game Board Function
+    for (let i = 0; i < imageData.length; i++) {
 
-    frontFace.src = imageData[i].imgSrc;
+        //console.log(imageData[i], 'instance');
+        const card = document.createElement("div");
+        const frontFace = document.createElement("img");
+        const backFace = document.createElement("div");
 
-    card.classList.add("card");
-    frontFace.classList.add("frontFace");
-    backFace.classList.add("backFace");
+        frontFace.src = imageData[i].imgSrc;
 
-    gameSection.appendChild(card);
-    card.appendChild(frontFace);
-    card.appendChild(backFace);
+        card.classList.add("card");
+        frontFace.classList.add("frontFace");
+        backFace.classList.add("backFace");
 
-    randomizeData();
-} 
+        gameSection.appendChild(card);
+        card.appendChild(frontFace);
+        card.appendChild(backFace);
+    }
+}
+
+
+shuffleCards();
+
+//pop up when open page and when game is over
 
 // flipCard function
 
@@ -108,4 +114,4 @@ for (let i = 0; i < imageData.length; i++) {
 
 // result function
 
-// restart functionv                                 
+// restart function                                
