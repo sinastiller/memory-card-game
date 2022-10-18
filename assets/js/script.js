@@ -26,11 +26,29 @@ const imageData = () => [
 ];
 
 // Get cards in no particular order
-
 const randomizeData = () => {
     const cardData = imageData();
-    cardData.sort(() => Math.random() - 0.5);
-    console.log(cardData);
+    cardData.sort(() => 0.5 - Math.random());
+    return cardData;
 }
 
 randomizeData();
+
+//Create Game Board Function
+const card = document.createElement("div");
+const frontFace = document.createElement("img");
+const backFace = document.createElement("div");
+
+card.classList.add("card");
+frontFace.classList.add("frontFace");
+backFace.classList.add("backFace");
+
+gameSection.appendChild(card)
+card.appendChild(frontFace);
+card.appendChild(backFace);
+
+frontFace.setAttribute(imgSrc);
+backFace.setAttribute(imgSrc);
+
+
+
