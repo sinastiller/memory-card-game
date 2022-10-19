@@ -82,7 +82,7 @@ const imageData = [{
 function randomizeData() {
     const cardData = imageData;
     cardData.sort(() => Math.random() - 0.5);
-    
+
     return cardData;
 };
 
@@ -101,7 +101,7 @@ function shuffleCards() {
         const card = document.createElement("div");
         const frontFace = document.createElement("img");
         const backFace = document.createElement("div");
-        
+
         // Add imageData to front of card
         frontFace.src = imageData[i].imgSrc;
 
@@ -112,18 +112,35 @@ function shuffleCards() {
         gameSection.appendChild(card);
         card.appendChild(frontFace);
         card.appendChild(backFace);
+
     }
+
+    // flipCard function
+        /**
+         * Toogle Cards => Class will be added and removed on every click
+         */
+         const cards = document.querySelectorAll(".card");
+
+         function flipCard() {
+             this.classList.toggle("flip");
+             
+         }
+         cards.forEach((card) => card.addEventListener("click", flipCard));
+         console.log(flipCard(cards));
 
 }
 
 shuffleCards();
 
-//pop up when open page and when game is over
-
-// flipCard function
 
 // checkForMatch function
+function checkMatch() { 
+    const clickedCard = flipCard;
+    console.log(clickedCard);
+}
 
 // result function
 
 // restart function                                
+
+//pop up when open page and when game is over

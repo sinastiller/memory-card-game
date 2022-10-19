@@ -43,7 +43,7 @@ section {
 
 .card {
     position: relative;
-    transition: transform 1.5s ease-out;
+    transition: transform 1.5s cubic-bezier(0.179, 0.90, 0.3, 1.3);
     transform-style: preserve-3d;
     box-shadow: 5px 5px 6px rgb(0, 0, 0, 0.2);
 }
@@ -53,10 +53,15 @@ section {
     height: 100%;
     width: 100%;
     position: absolute;
-
 }
 
 .backFace {
     background: rgb(142, 61, 54);
     backface-visibility: hidden;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+    /* for Safari browser */
+    /*-webkit-transform: rotateY(180deg);*/
 }

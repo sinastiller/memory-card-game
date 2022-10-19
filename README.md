@@ -38,6 +38,7 @@ This is my inital approach towards my project, which might change during the pro
 * [SheCodes](https://gradients.shecodes.io/) to add a background using linear-gradient.
 * [Convertio](https://convertio.co/download/) and [CloudConvert](https://cloudconvert.com/jpg-to-webp) to convert images to .webp .
 * [She Codes](https://generators.shecodes.io/css-box-shadow-generator) to generate the box-shadow for .card.
+* [CSS Tricks](https://css-tricks.com/advanced-css-animation-using-cubic-bezier/) helped me to understand using the effect cubic-bezier when rotating a card.
 
 ## [Credits](#credits)
 
@@ -49,6 +50,7 @@ This is my inital approach towards my project, which might change during the pro
 * [Css Tricks](https://css-tricks.com/how-to-stack-elements-in-css/https://css-tricks.com/how-to-stack-elements-in-css/) helped me understand how to stack the cards .frontFace and .backFace in CSS.
 * [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) to understand how to rotate a card.
 * [W3Schools](https://www.w3schools.com/css/css3_transitions.asp) to add a transition effect when rotating a card.
+* [DEV](https://dev.to/mugas/flip-cards-with-javascript-2ad0) was referred to, to understand how to flip a card/ use the toggle function in JS.
 
 ## [Media](#media)
 * [Max](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Max-Mayfield-stranger-things-42982418-800-1066.jpg)
