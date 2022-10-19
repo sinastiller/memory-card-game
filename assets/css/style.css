@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     font-family: "Changa", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 5px auto;
     padding: 2px;
 }
@@ -38,7 +38,16 @@ section {
     grid-gap: 1rem;
 }
 
+.card {
+    position: relative;
+}
+
 .frontFace, .backFace {
     height: 17vh;
     width: 13vh;
+    position: absolute;
+}
+
+.backFace {
+    background:rgb(142, 61, 54);
 }
