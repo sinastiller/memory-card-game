@@ -37,6 +37,7 @@ This is my inital approach towards my project, which might change during the pro
 ### [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used)
 * [SheCodes](https://gradients.shecodes.io/) to add a background using linear-gradient.
 * [Convertio](https://convertio.co/download/) and [CloudConvert](https://cloudconvert.com/jpg-to-webp) to convert images to .webp .
+* [She Codes](https://generators.shecodes.io/css-box-shadow-generator) to generate the box-shadow for .card.
 
 ## [Credits](#credits)
 
@@ -46,6 +47,8 @@ This is my inital approach towards my project, which might change during the pro
 * [W3Schools](https://www.w3schools.com/js/js_arrow_function.asp) was referred to, to understand how arrow functions work.
 * [DEV Community](https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj) was used to understand how to shuffle an array.
 * [Css Tricks](https://css-tricks.com/how-to-stack-elements-in-css/https://css-tricks.com/how-to-stack-elements-in-css/) helped me understand how to stack the cards .frontFace and .backFace in CSS.
+* [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) to understand how to rotate a card.
+* [W3Schools](https://www.w3schools.com/css/css3_transitions.asp) to add a transition effect when rotating a card.
 
 ## [Media](#media)
 * [Max](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Max-Mayfield-stranger-things-42982418-800-1066.jpg)

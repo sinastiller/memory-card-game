@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-repeat: no-repeat;
     background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(173, 227, 202) 62.3%, rgb(156, 227, 225) 93.8%);
@@ -20,34 +21,42 @@ body {
 h1 {
     font-family: "Play", sans-serif;
     font-size: 3rem;
-    margin: 10px auto;
-    padding: 2px;
+    margin: 0.8rem auto;
+    padding: 0.3rem;
 }
 
 h2 {
     font-family: "Changa", sans-serif;
     font-size: 1.5rem;
-    margin: 5px auto;
-    padding: 2px;
+    margin: 0.5rem auto;
+    padding: 0.1rem;
 }
 
 section {
+    margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 9rem);
-    grid-template-rows: repeat(4, 11rem); 
-    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(4, 7rem);
+    grid-gap: 1.5rem;
+    perspective: 30rem;
 }
 
 .card {
     position: relative;
+    transition: transform 1.5s ease-out;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 6px rgb(0, 0, 0, 0.2);
 }
 
-.frontFace, .backFace {
-    height: 17vh;
-    width: 13vh;
+.frontFace,
+.backFace {
+    height: 100%;
+    width: 100%;
     position: absolute;
+
 }
 
 .backFace {
-    background:rgb(142, 61, 54);
+    background: rgb(142, 61, 54);
+    backface-visibility: hidden;
 }
