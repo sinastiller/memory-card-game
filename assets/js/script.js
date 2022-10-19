@@ -73,12 +73,23 @@ const imageData = [{
 ];
 
 // Get cards in no particular order
+
+/**
+ * randomize() to get images in random order
+ * when page is loaded or refresehd
+ */
+
 function randomizeData() {
     const cardData = imageData;
     cardData.sort(() => Math.random() - 0.5);
-
+    
     return cardData;
 };
+
+/**
+ * shuffleCards() to randomize cardData thorugh a loop
+ * when page is opened or refreshed
+ */
 
 function shuffleCards() {
     const cardData = randomizeData();
@@ -90,7 +101,8 @@ function shuffleCards() {
         const card = document.createElement("div");
         const frontFace = document.createElement("img");
         const backFace = document.createElement("div");
-
+        
+        // Add imageData to front of card
         frontFace.src = imageData[i].imgSrc;
 
         card.classList.add("card");
@@ -101,8 +113,8 @@ function shuffleCards() {
         card.appendChild(frontFace);
         card.appendChild(backFace);
     }
-}
 
+}
 
 shuffleCards();
 
