@@ -102,20 +102,23 @@ function shuffleCards() {
         const frontFace = document.createElement("img");
         const backFace = document.createElement("div");
 
-        // Add imageData to front of card
-        frontFace.src = imageData[i].imgSrc;
-
         card.classList.add("card");
         frontFace.classList.add("frontFace");
         backFace.classList.add("backFace");
+
+        // Add imageData to front of card
+        frontFace.src = imageData[i].imgSrc;
+
+        // Add name to cards
+        card.setAttribute("name", imageData[i].name);
 
         gameSection.appendChild(card);
         card.appendChild(frontFace);
         card.appendChild(backFace);
 
-        /**
-         * Toogle Cards => Class will be added and removed on every click
-         */
+        
+        // Toogle Cards => Class will be added and removed on every click
+        
         card.addEventListener("click", (flipCard) => {
             card.classList.toggle("flipCard");
             checkForMatch(flipCard);

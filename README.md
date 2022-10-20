@@ -39,6 +39,8 @@ This is my inital approach towards my project, which might change during the pro
 * [Convertio](https://convertio.co/download/) and [CloudConvert](https://cloudconvert.com/jpg-to-webp) to convert images to .webp .
 * [She Codes](https://generators.shecodes.io/css-box-shadow-generator) to generate the box-shadow for .card.
 * [CSS Tricks](https://css-tricks.com/advanced-css-animation-using-cubic-bezier/) helped me to understand using the effect cubic-bezier when rotating a card.
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event/target) to find out more about the .target property.
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to understand the EventTarget.addEventListener() method better.
 
 ## [Credits](#credits)
 
