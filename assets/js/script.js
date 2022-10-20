@@ -113,31 +113,26 @@ function shuffleCards() {
         card.appendChild(frontFace);
         card.appendChild(backFace);
 
-    }
-
-    // flipCard function
         /**
          * Toogle Cards => Class will be added and removed on every click
          */
-         const cards = document.querySelectorAll(".card");
+        card.addEventListener("click", (flipCard) => {
+            card.classList.toggle("flipCard");
+            checkForMatch(flipCard);
+        });
+    };
+};
 
-         function flipCard() {
-             this.classList.toggle("flip");
-             
-         }
-         cards.forEach((card) => card.addEventListener("click", flipCard));
-         console.log(flipCard(cards));
+// checkForMatch function
 
+function checkForMatch(flipCard) {
+    console.log(flipCard);
+    const clickedCard = flipCard.target;
+    console.log(clickedCard);
 }
-
 shuffleCards();
 
 
-// checkForMatch function
-function checkMatch() { 
-    const clickedCard = flipCard;
-    console.log(clickedCard);
-}
 
 // result function
 

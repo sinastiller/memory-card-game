@@ -60,7 +60,7 @@ section {
     backface-visibility: hidden;
 }
 
-.card.flip {
+.flipCard {
     transform: rotateY(180deg);
     /* for Safari browser */
     /*-webkit-transform: rotateY(180deg);*/
