@@ -1,3 +1,17 @@
+// User Input when page loaded
+
+function requiredInput () {
+    let username = prompt("Welcome to the Stranger Things Memory Card Game! \nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! \nTo proceed please provide your Name: ");
+if (username === null || username === "") {
+    return requiredInput();
+} else {
+    txt = "Good Luck," + username + "!"
+}
+alert(txt);
+}
+
+requiredInput(); 
+
 // Gathering the moves a player has left
 const gameSection = document.getElementById("game-section");
 const playerMovesLeft = document.getElementById("playerMovesLeft");
@@ -116,23 +130,40 @@ function shuffleCards() {
         card.appendChild(frontFace);
         card.appendChild(backFace);
 
-        
+
         // Toogle Cards => Class will be added and removed on every click
-        
-        card.addEventListener("click", (flipCard) => {
+
+        card.addEventListener("click", (turnCard) => {
             card.classList.toggle("flipCard");
-            checkForMatch(flipCard);
+            checkForMatch(turnCard);
         });
     };
 };
 
 // checkForMatch function
 
-function checkForMatch(flipCard) {
-    console.log(flipCard);
-    const clickedCard = flipCard.target;
+function checkForMatch(turnCard) {
+    console.log(turnCard);
+    const clickedCard = turnCard.target;
     console.log(clickedCard);
-}
+
+    clickedCard.classList.add("flipped");
+    const flippedCard = document.getElementsByClassName("flipped");
+
+    if (flippedCard.length === 2) {
+        if (flippedCard[0].getAttribute("name") === flippedCard[1].getAttribute("name")) {
+
+            console.log("You have a match!");
+        } else {
+            console.log("Try again!");
+            for (let i = 0; i < 2; i++) {
+                clickedCard[i].classList.remove("flipped");
+                card[i].classList.remove("flipCard");
+
+            };
+        };
+    };
+};
 shuffleCards();
 
 
@@ -140,5 +171,3 @@ shuffleCards();
 // result function
 
 // restart function                                
-
-//pop up when open page and when game is over
