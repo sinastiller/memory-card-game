@@ -15,7 +15,7 @@
 // Gathering the moves a player has left
 const gameSection = document.getElementById("game-section");
 const playerMovesLeft = document.getElementById("playerMovesLeft");
-let playerMoves = 8;
+let playerMoves = 12;
 playerMovesLeft.textContent = playerMoves;
 
 // Gathering elements for cards
@@ -146,6 +146,10 @@ function flipCard() {
     // only turn two cards at a time
     if (secureBoard) return;
 
+    // if user clicks twice on the same card, he still has to 
+    // execute the click on the secondCard to be able to match the cards
+    if (this === firstCard) return;
+
     this.classList.add("flipCard");
 
     if (!flippedCard) {
@@ -191,6 +195,7 @@ function checkForMatch() {
 function preventFlip() {
     firstCard.removeEventListener("click, flipCard");
     firstCard.removeEventListener("click, flipCard");
+    restoreCard();
 }
 
 /**
@@ -204,6 +209,18 @@ function allowFlip() {
         secondCard.classList.remove("flipCard");
 
         secureBoard = false;
+        restoreCard();
     }, 1000);
 }
+
+/**
+ * Function allows user to click on the same card again onces its flipped back over, after board locks to only click 
+ * on two cards.
+ */
+function restoreCard() {
+    flippedCard = false;
+    secureBoard = false;
+    firstCard = null;
+    secondCard = null;}
+
 cards.forEach(card => card.addEventListener("click", flipCard));

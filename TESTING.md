@@ -22,3 +22,4 @@
 
 The following issues have been solved thorughout the process:
 * Due to the not-working checkForMatch() I had to start over in script.js and alter some of my steps to acchieve the desired working result.
+* When clicking on the cards to find two matching cards, the user was able to click on more than two in a small amount of time. To prevent this from happening I declared a variable secureBoard, that will only allow two cards to be clicked on at the same time and only when they have been flipped back, is the user able to choose the next two cards.
