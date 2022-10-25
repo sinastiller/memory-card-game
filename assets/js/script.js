@@ -169,8 +169,7 @@ function checkForMatch() {
     // check if cards match
     if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
         // if they match
-        firstCard.removeEventListener("click, flipCard");
-        firstCard.removeEventListener("click, flipCard");
+        preventFlip();
     }
     // console.log("Function succesfull");
     else {
@@ -184,4 +183,11 @@ function checkForMatch() {
     }
 }
 
+/**
+ * Function prevents cards from flipping back
+ */
+function preventFlip() {
+    firstCard.removeEventListener("click, flipCard");
+    firstCard.removeEventListener("click, flipCard");
+}
 cards.forEach(card => card.addEventListener("click", flipCard));
