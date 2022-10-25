@@ -96,12 +96,12 @@ const imageData = [{
  * when page is loaded or refresehd
  */
 
- function randomizeData() {
+function randomizeData() {
     let cardData = imageData;
     cardData.sort(() => Math.random() - 0.5);
 
     return cardData;
-   
+
 };
 
 //Create Game Board Function
@@ -138,8 +138,43 @@ function createBoard() {
 createBoard();
 
 const cards = document.querySelectorAll(".card");
-function flipCard() {
-    this.classList.toggle("flipCard");
-}
-cards.forEach( card => card.addEventListener("click", flipCard));
+let flippedCard = false;
+let firstCard, secondCard;
 
+function flipCard() {
+    this.classList.add("flipCard");
+
+    if (!flippedCard) {
+        //first click on card
+        flippedCard = true;
+        firstCard = this;
+        //console.log({flippedCard, firstCard});
+    } else {
+        //second click on another card
+        flippedCard = false;
+        secondCard = this;
+
+        //console.log({firstCard, secondCard});
+        // console.log(firstCard.getAttribute("name"));
+        // console.log(secondCard.getAttribute("name"));
+
+        // check if cards match
+        if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
+            // if they match
+            firstCard.removeEventListener("click, flipCard");
+            firstCard.removeEventListener("click, flipCard");
+        }
+        // console.log("Function succesfull");
+        else {
+            setTimeout(() => {
+                firstCard.classList.remove("flipCard");
+                secondCard.classList.remove("flipCard");
+            },1000);
+
+            playerMoves--;
+            playerMovesLeft.innerHTML = playerMoves;
+
+        }
+    }
+}
+cards.forEach(card => card.addEventListener("click", flipCard));
