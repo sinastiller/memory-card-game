@@ -1,23 +1,27 @@
 // User Input when page loaded
 
-function requiredInput () {
-    let username = prompt("Welcome to the Stranger Things Memory Card Game! \nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! \nTo proceed please provide your Name: ");
-if (username === null || username === "") {
-    return requiredInput();
-} else {
-    txt = "Good Luck," + username + "!"
-}
-alert(txt);
-}
+// function requiredInput() {
+//     let username = prompt("Welcome to the Stranger Things Memory Card Game! \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! \n\nTo proceed please enter your Name: ");
+//     if (username === null || username === "") {
+//         return requiredInput();
+//     } else {
+//         txt = "Good Luck, " + username + " !"
+//     }
+//     alert(txt);
+// }
 
-requiredInput(); 
+// requiredInput();
 
 // Gathering the moves a player has left
 const gameSection = document.getElementById("game-section");
 const playerMovesLeft = document.getElementById("playerMovesLeft");
-const playerMoves = 8;
-
+let playerMoves = 8;
 playerMovesLeft.textContent = playerMoves;
+
+// Gathering elements for cards
+let card = document.createElement("div");
+let frontFace = document.createElement("img");
+let backFace = document.createElement("div");
 
 // Generating the image data
 const imageData = [{
@@ -86,35 +90,35 @@ const imageData = [{
     },
 ];
 
-// Get cards in no particular order
-
+// Getting cards in no particular order
 /**
  * randomize() to get images in random order
  * when page is loaded or refresehd
  */
 
-function randomizeData() {
-    const cardData = imageData;
+ function randomizeData() {
+    let cardData = imageData;
     cardData.sort(() => Math.random() - 0.5);
 
     return cardData;
+   
 };
 
+//Create Game Board Function
 /**
- * shuffleCards() to randomize cardData thorugh a loop
- * when page is opened or refreshed
+ * Creating the Game Board
  */
 
-function shuffleCards() {
-    const cardData = randomizeData();
+function createBoard() {
+    let cardData = randomizeData();
 
-    //Create Game Board Function
     for (let i = 0; i < imageData.length; i++) {
 
-        //console.log(imageData[i], 'instance');
-        const card = document.createElement("div");
-        const frontFace = document.createElement("img");
-        const backFace = document.createElement("div");
+        // console.log(imageData[i], 'instance');
+
+        card = document.createElement("div");
+        frontFace = document.createElement("img");
+        backFace = document.createElement("div");
 
         card.classList.add("card");
         frontFace.classList.add("frontFace");
@@ -129,45 +133,13 @@ function shuffleCards() {
         gameSection.appendChild(card);
         card.appendChild(frontFace);
         card.appendChild(backFace);
+    }
+}
+createBoard();
 
+const cards = document.querySelectorAll(".card");
+function flipCard() {
+    this.classList.toggle("flipCard");
+}
+cards.forEach( card => card.addEventListener("click", flipCard));
 
-        // Toogle Cards => Class will be added and removed on every click
-
-        card.addEventListener("click", (turnCard) => {
-            card.classList.toggle("flipCard");
-            checkForMatch(turnCard);
-        });
-    };
-};
-
-// checkForMatch function
-
-function checkForMatch(turnCard) {
-    console.log(turnCard);
-    const clickedCard = turnCard.target;
-    console.log(clickedCard);
-
-    clickedCard.classList.add("flipped");
-    const flippedCard = document.getElementsByClassName("flipped");
-
-    if (flippedCard.length === 2) {
-        if (flippedCard[0].getAttribute("name") === flippedCard[1].getAttribute("name")) {
-
-            console.log("You have a match!");
-        } else {
-            console.log("Try again!");
-            for (let i = 0; i < 2; i++) {
-                clickedCard[i].classList.remove("flipped");
-                card[i].classList.remove("flipCard");
-
-            };
-        };
-    };
-};
-shuffleCards();
-
-
-
-// result function
-
-// restart function                                

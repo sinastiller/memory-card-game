@@ -53,6 +53,8 @@ This is my inital approach towards my project, which might change during the pro
 * [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) to understand how to rotate a card.
 * [W3Schools](https://www.w3schools.com/css/css3_transitions.asp) to add a transition effect when rotating a card.
 * [DEV](https://dev.to/mugas/flip-cards-with-javascript-2ad0) was referred to, to understand how to flip a card/ use the toggle function in JS.
+* [Stackoverflow](https://stackoverflow.com/questions/30389982/how-to-set-prompt-textbox-field-in-js-as-required-field) was used to understand , how to make the prompt() required.
+* [W3School](https://www.w3schools.com/jsreF/met_win_prompt.asp) was referred to when creating the prompt().
 
 ## [Media](#media)
 * [Max](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Max-Mayfield-stranger-things-42982418-800-1066.jpg)
