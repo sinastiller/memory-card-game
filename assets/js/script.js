@@ -158,23 +158,30 @@ function flipCard() {
         // console.log(firstCard.getAttribute("name"));
         // console.log(secondCard.getAttribute("name"));
 
-        // check if cards match
-        if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
-            // if they match
-            firstCard.removeEventListener("click, flipCard");
-            firstCard.removeEventListener("click, flipCard");
-        }
-        // console.log("Function succesfull");
-        else {
-            setTimeout(() => {
-                firstCard.classList.remove("flipCard");
-                secondCard.classList.remove("flipCard");
-            },1000);
-
-            playerMoves--;
-            playerMovesLeft.innerHTML = playerMoves;
-
-        }
+        checkForMatch();
     }
 }
+
+/**
+ * Function checking if cards match
+ */
+function checkForMatch() {
+    // check if cards match
+    if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
+        // if they match
+        firstCard.removeEventListener("click, flipCard");
+        firstCard.removeEventListener("click, flipCard");
+    }
+    // console.log("Function succesfull");
+    else {
+        setTimeout(() => {
+            firstCard.classList.remove("flipCard");
+            secondCard.classList.remove("flipCard");
+        },1000);
+
+        playerMoves--;
+        playerMovesLeft.innerHTML = playerMoves;
+    }
+}
+
 cards.forEach(card => card.addEventListener("click", flipCard));
