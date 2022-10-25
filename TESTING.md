@@ -17,3 +17,8 @@
 |  console.log(flipCard) | 
 | console.log(clickedCard)|
 | checkForMatch(flipCard) |
+
+## [Bugs](#bugs)
+
+The following issues have been solved thorughout the process:
+* Due to the not-working checkForMatch() I had to start over in script.js and alter some of my steps to acchieve the desired working result.

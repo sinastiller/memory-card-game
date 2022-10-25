@@ -140,8 +140,12 @@ createBoard();
 const cards = document.querySelectorAll(".card");
 let flippedCard = false;
 let firstCard, secondCard;
+let secureBoard = false;
 
 function flipCard() {
+    // only turn two cards at a time
+    if (secureBoard) return;
+
     this.classList.add("flipCard");
 
     if (!flippedCard) {
@@ -149,6 +153,7 @@ function flipCard() {
         flippedCard = true;
         firstCard = this;
         //console.log({flippedCard, firstCard});
+
     } else {
         //second click on another card
         flippedCard = false;
@@ -163,7 +168,7 @@ function flipCard() {
 }
 
 /**
- * Function checking if cards match
+ * Function checking if both clicked cards match each other.
  */
 function checkForMatch() {
     // check if cards match
@@ -173,21 +178,32 @@ function checkForMatch() {
     }
     // console.log("Function succesfull");
     else {
-        setTimeout(() => {
-            firstCard.classList.remove("flipCard");
-            secondCard.classList.remove("flipCard");
-        },1000);
-
+        allowFlip();
         playerMoves--;
         playerMovesLeft.innerHTML = playerMoves;
     }
 }
 
 /**
- * Function prevents cards from flipping back
+ * Function prevents cards from flipping back, so they can't be clicked
+ * on again.
  */
 function preventFlip() {
     firstCard.removeEventListener("click, flipCard");
     firstCard.removeEventListener("click, flipCard");
+}
+
+/**
+ * Function allows cards to flip back to be able to be clicked again.
+ */
+function allowFlip() {
+    secureBoard = true;
+
+    setTimeout(() => {
+        firstCard.classList.remove("flipCard");
+        secondCard.classList.remove("flipCard");
+
+        secureBoard = false;
+    }, 1000);
 }
 cards.forEach(card => card.addEventListener("click", flipCard));
