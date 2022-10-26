@@ -241,16 +241,14 @@ function restartGame() {
     let cardData = randomizeData();
     let images = document.querySelectorAll(".frontFace");
     const cards = document.querySelectorAll(".card");
-    gameSection.style.pointerEvents = "none";
-    let firstCard, secondCard;
+
     cardData.forEach((item, index) => {
         cards[index].classList.remove("flipCard");
 
         setTimeout(() => {
-            cards[index].style.pointerEvents = "all";
+            cards.forEach(card => card.addEventListener("click", flipCard));
             images[index].src = item.imgSrc;
             cards[index].setAttribute("name", item.name);
-            gameSection.style.pointerEvents = "all";
         }, 1000);
     });
 
