@@ -15,7 +15,7 @@
 // Gathering the moves a player has left
 const gameSection = document.getElementById("game-section");
 const playerMovesLeft = document.getElementById("playerMovesLeft");
-let playerMoves = 3;
+let playerMoves = 9;
 playerMovesLeft.textContent = playerMoves;
 
 // Gathering elements for cards
@@ -142,7 +142,10 @@ let flippedCard = false;
 let firstCard, secondCard;
 let secureBoard = false;
 
+
 function flipCard() {
+    const winGame = document.querySelectorAll('.flipCard')
+
     // only turn two cards at a time
     if (secureBoard) return;
 
@@ -151,6 +154,7 @@ function flipCard() {
     if (this === firstCard) return;
 
     this.classList.add("flipCard");
+    
 
     if (!flippedCard) {
         //first click on card
@@ -169,12 +173,18 @@ function flipCard() {
 
         checkForMatch();
     }
+    return winGame;
 }
+
+
+
 
 /**
  * Function checking if both clicked cards match each other.
  */
 function checkForMatch() {
+const winGame = document.querySelectorAll('.flipCard');
+    
     // check if cards match
     if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
         // if they match
@@ -189,10 +199,17 @@ function checkForMatch() {
         // restart game
         if (playerMoves === 0) {
             setTimeout(() => {
-                restartGame();
+                restartGame("🫣 So close! \nPlay another round to try your luck!🍀");
             }, 1000);
-        };
+        }  
     };
+    
+    // if user wins
+    if(winGame.length === 16) {
+        // console.log('congrats!')
+         restartGame("🥳 CONGRATULATIONS, YOU WON! 🤖 \nReady for another round?👀");
+     };
+    
 };
 
 /**
@@ -236,7 +253,11 @@ cards.forEach(card => card.addEventListener("click", flipCard));
 /**
  * Function to restart the game
  */
-function restartGame() {
+function restartGame(Text) {
+    // pop up window with text at the end of the game
+    setTimeout(() => {
+        window.alert(Text)
+    }, 150);
 
     let cardData = randomizeData();
     let images = document.querySelectorAll(".frontFace");
@@ -245,13 +266,14 @@ function restartGame() {
     cardData.forEach((item, index) => {
         cards[index].classList.remove("flipCard");
 
+        // delays reshuffling of images until cards a turned back around
         setTimeout(() => {
             cards.forEach(card => card.addEventListener("click", flipCard));
             images[index].src = item.imgSrc;
             cards[index].setAttribute("name", item.name);
+
+            playerMoves = 9;
+            playerMovesLeft.innerHTML = playerMoves;
         }, 1000);
     });
-
-    playerMoves = 3;
-    playerMovesLeft.innerHTML = playerMoves;
 };
