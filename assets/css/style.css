@@ -7,9 +7,8 @@
 }
 
 body {
-    background-repeat: no-repeat;
     background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(173, 227, 202) 62.3%, rgb(156, 227, 225) 93.8%);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -196,7 +196,7 @@ const winGame = document.querySelectorAll('.flipCard');
         playerMoves--;
         playerMovesLeft.innerHTML = playerMoves;
 
-        // restart game
+        // restart game when user looses
         if (playerMoves === 0) {
             setTimeout(() => {
                 restartGame("🫣 So close! \nPlay another round to try your luck!🍀");
@@ -204,7 +204,7 @@ const winGame = document.querySelectorAll('.flipCard');
         }  
     };
     
-    // if user wins
+    // If user wins
     if(winGame.length === 16) {
         // console.log('congrats!')
          restartGame("🥳 CONGRATULATIONS, YOU WON! 🤖 \nReady for another round?👀");
