@@ -55,6 +55,8 @@ This is my inital approach towards my project, which might change during the pro
 * [DEV](https://dev.to/mugas/flip-cards-with-javascript-2ad0) was referred to, to understand how to flip a card/ use the toggle function in JS.
 * [Stackoverflow](https://stackoverflow.com/questions/30389982/how-to-set-prompt-textbox-field-in-js-as-required-field) was used to understand , how to make the prompt() required.
 * [W3School](https://www.w3schools.com/jsreF/met_win_prompt.asp) was referred to when creating the prompt().
+* [Learn Vanilla Javascript: Memory Game Tutorial](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw&index=1) 
+*[Awesome Vanilla JavaScript Memory Card Game Tutorial](https://www.youtube.com/watch?v=-tlb4tv4mC4)
 
 ## [Media](#media)
 * [Max](https://images6.fanpop.com/image/photos/42900000/Stranger-Things-3-Portraits-Max-Mayfield-stranger-things-42982418-800-1066.jpg)

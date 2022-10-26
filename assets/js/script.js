@@ -15,7 +15,7 @@
 // Gathering the moves a player has left
 const gameSection = document.getElementById("game-section");
 const playerMovesLeft = document.getElementById("playerMovesLeft");
-let playerMoves = 12;
+let playerMoves = 3;
 playerMovesLeft.textContent = playerMoves;
 
 // Gathering elements for cards
@@ -185,16 +185,23 @@ function checkForMatch() {
         allowFlip();
         playerMoves--;
         playerMovesLeft.innerHTML = playerMoves;
-    }
-}
+
+        // restart game
+        if (playerMoves === 0) {
+            setTimeout(() => {
+                restartGame();
+            }, 1000);
+        };
+    };
+};
 
 /**
  * Function prevents cards from flipping back, so they can't be clicked
  * on again.
  */
 function preventFlip() {
-    firstCard.removeEventListener("click, flipCard");
-    firstCard.removeEventListener("click, flipCard");
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
     restoreCard();
 }
 
@@ -221,6 +228,32 @@ function restoreCard() {
     flippedCard = false;
     secureBoard = false;
     firstCard = null;
-    secondCard = null;}
+    secondCard = null;
+};
 
 cards.forEach(card => card.addEventListener("click", flipCard));
+
+/**
+ * Function to restart the game
+ */
+function restartGame() {
+
+    let cardData = randomizeData();
+    let images = document.querySelectorAll(".frontFace");
+    const cards = document.querySelectorAll(".card");
+    gameSection.style.pointerEvents = "none";
+    let firstCard, secondCard;
+    cardData.forEach((item, index) => {
+        cards[index].classList.remove("flipCard");
+
+        setTimeout(() => {
+            cards[index].style.pointerEvents = "all";
+            images[index].src = item.imgSrc;
+            cards[index].setAttribute("name", item.name);
+            gameSection.style.pointerEvents = "all";
+        }, 1000);
+    });
+
+    playerMoves = 3;
+    playerMovesLeft.innerHTML = playerMoves;
+};
