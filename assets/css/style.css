@@ -81,7 +81,7 @@ section {
 
 .backFace {
     background-image: url(../images/backface.webp);
-    aspect-ratio: 0.80;
+    background-position: center ;
     background-size: cover;
     backface-visibility: hidden;
 }
