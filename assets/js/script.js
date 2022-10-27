@@ -22,6 +22,7 @@ playerMovesLeft.textContent = playerMoves;
 let card = document.createElement("div");
 let frontFace = document.createElement("img");
 let backFace = document.createElement("div");
+let alt = document.createAttribute("alt");
 
 // Generating the image data
 const imageData = [{
@@ -126,6 +127,7 @@ function createBoard() {
 
         // Add imageData to front of card
         frontFace.src = imageData[i].imgSrc;
+        frontFace.alt = imageData[i].name;
 
         // Add name to cards
         card.setAttribute("name", imageData[i].name);
