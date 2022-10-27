@@ -41,6 +41,8 @@ This is my inital approach towards my project, which might change during the pro
 * [CSS Tricks](https://css-tricks.com/advanced-css-animation-using-cubic-bezier/) helped me to understand using the effect cubic-bezier when rotating a card.
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event/target) to find out more about the .target property.
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to understand the EventTarget.addEventListener() method better.
+*[Adobe Fonts](https://fonts.adobe.com/fonts/itc-benguiat#fonts-section)
+]
 
 ## [Credits](#credits)
 

@@ -7,24 +7,29 @@
 }
 
 body {
-    background: radial-gradient(circle at 7.5% 10%, rgb(58, 95, 229) 10.5%, rgb(255, 21, 21) 52.3%, rgb(30, 7, 7) 93.8%);
-    height: 100vh;
+    background: radial-gradient(circle at 50.4% 50.5%, rgb(221, 49, 49) 10%, rgb(119, 0, 0) 90%);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #2d2c2c;
+    color: #1E0707;
 }
 
-h1 {
-font-family: itc-benguiat, serif;
-font-weight: 700;
-text-transform: uppercase;
 
+h1 {
+    font-family: itc-benguiat, serif;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 3rem;
     text-decoration: underline;
-    margin: 0 auto;
+    margin: 0.5rem auto;
     padding: 0 auto;
 }
 
@@ -71,10 +76,12 @@ section {
     width: 100%;
     position: absolute;
     pointer-events: none;
+    border-radius: 5px;
 }
 
 .backFace {
     background-image: url(../images/backface.webp);
+    aspect-ratio: 0.80;
     background-size: cover;
     backface-visibility: hidden;
 }
@@ -86,9 +93,7 @@ section {
 }
 
 footer {
-    position: absolute;
     bottom: 0;
-    height: 4vh;
     width: 100%;
     text-align: center;
     font-family: "Changa", sans-serif;

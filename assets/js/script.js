@@ -1,16 +1,17 @@
-// User Input when page loaded
+//User Input when page loaded
 
-// function requiredInput() {
-//     let username = prompt("Welcome to the Stranger Things Memory Card Game! \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! \n\nTo proceed please enter your Name: ");
-//     if (username === null || username === "") {
-//         return requiredInput();
-//     } else {
-//         txt = "Good Luck, " + username + " !"
-//     }
-//     alert(txt);
-// }
+let username = prompt("Welcome to the Stranger Things Memory Card Game! \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! \n\nTo proceed please enter your Name: ");
 
-// requiredInput();
+function requiredInput() {
+    if (username === null || username === "") {
+        return requiredInput();
+    } else {
+        txt = "Good Luck, " + username + " !"
+    }
+    alert(txt);
+}
+
+requiredInput();
 
 // Gathering the moves a player has left
 const gameSection = document.getElementById("game-section");
@@ -156,7 +157,7 @@ function flipCard() {
     if (this === firstCard) return;
 
     this.classList.add("flipCard");
-    
+
 
     if (!flippedCard) {
         //first click on card
@@ -185,8 +186,8 @@ function flipCard() {
  * Function checking if both clicked cards match each other.
  */
 function checkForMatch() {
-const winGame = document.querySelectorAll('.flipCard');
-    
+    const winGame = document.querySelectorAll('.flipCard');
+
     // check if cards match
     if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
         // if they match
@@ -201,17 +202,17 @@ const winGame = document.querySelectorAll('.flipCard');
         // restart game when user looses
         if (playerMoves === 0) {
             setTimeout(() => {
-                restartGame("🫣 So close! \nPlay another round to try your luck!🍀");
+                restartGame(`🫣 So close, ${username}! \nPlay another round to try your luck!🍀`);
             }, 1000);
-        }  
+        }
     };
-    
+
     // If user wins
-    if(winGame.length === 16) {
+    if (winGame.length === 16) {
         // console.log('congrats!')
-         restartGame("🥳 CONGRATULATIONS, YOU WON! 🤖 \nReady for another round?👀");
-     };
-    
+        restartGame(`🥳 CONGRATULATIONS, ${username} YOU WON! 🤖 \nReady for another round?👀`);
+    };
+
 };
 
 /**
