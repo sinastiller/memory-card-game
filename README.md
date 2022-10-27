@@ -42,7 +42,7 @@ This is my inital approach towards my project, which might change during the pro
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event/target) to find out more about the .target property.
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to understand the EventTarget.addEventListener() method better.
 *[Adobe Fonts](https://fonts.adobe.com/fonts/itc-benguiat#fonts-section)
-]
+*[FavIcon Generator](https://favicon.io/favicon-generator/)
 
 ## [Credits](#credits)
 
