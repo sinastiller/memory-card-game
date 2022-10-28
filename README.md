@@ -85,9 +85,7 @@ The website is a one-page page containing:
 
 ![prompt() user input](readme-images/prompt().png) 
 
-![prompt() answer with user input](readme-images/promt().answer.png)
-
-When loading the page, user is required to insert a username to be able to play the game, which is the stored for later use. The user can also find a quick explanation what the goal of the game is. There will be a second pop up with the inserted username, wishing the player good luck with the game. 
+When loading the page, user is required to insert a username to be able to play the game, which is the stored for later use. The user can also find a quick explanation what the goal of the game is.
 
 #### Top of Page
 

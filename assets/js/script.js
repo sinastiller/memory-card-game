@@ -1,7 +1,7 @@
 //User Input when page loaded
 
 let username = prompt("Welcome to the Stranger Things Memory Card Game! 🃏 \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! 👑 \n\nTo proceed please enter your Name: ");
-let txt;
+
 
 function requiredInput () {
     do {
