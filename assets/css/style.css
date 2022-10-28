@@ -34,21 +34,21 @@ h1 {
     font-size: 3rem;
     text-decoration: underline;
     margin: 0.5rem auto;
-    padding: 0 auto;
+    padding: 0;
 }
 
 h2 {
     font-family: "Play", sans-serif;
     font-size: 1.6rem;
-    margin: 0.1 auto;
-    padding: 0.1rem auto;
+    margin: 0 auto;
+    padding: 0;
 }
 
 h3 {
     font-family: "Changa", sans-serif;
     font-size: 1.2rem;
-    margin: 0.1 auto;
-    padding: 0.1rem auto;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #game-section {
@@ -71,7 +71,6 @@ h3 {
 
 .card:active {
     transform: scale(.89);
-    transition: trasnform 0.3;
 }
 
 .frontFace,

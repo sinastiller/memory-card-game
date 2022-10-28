@@ -11,6 +11,29 @@
 * [Manual Testing](#manualtesting)
 * [Bugs](#bugs)
 
+## [Automated Testing](#automatedtesting)
+
+### [W3C Validator](#w3cvalidator)
+
+To verify that the HTML code is written in the correct structure, I tested each .html individually. There are currently no errors, as I have fixed these.
+
+![W3C Validator](readme-images/w3c.validator.png)
+
+To verify that the CSS code is written to the correct standards, I tested style.css using the W3C Jigsaw. There are currently no errors.
+
+![CSS Validator](readme-images/css.validator.png)
+
+### [Responsiveness](#responsivness)
+
+* The website was tested on different screen sizes and devices to ensure outstanding responsiveness. It has been tested on a large screen, laptop, iPad Mini, iPhone X, iPhone8, Xiaomi 9, and iPhone SE. It has also been tested in landscape mode.
+* The website was tested on Mozilla Firefox, Chrome, Safari, and Microsoft Edge.
+
+### [Lighthouse](#lighthouse)
+
+Lighthouse was used to test the performance, accessibility, best practices, and SEO. My game page achieved a high rating in all categories.
+
+![Lighthouse](readme-images/lighthouse.png)
+
 ## [Manual Testing](#manualtesting)
 
 | FEATURE | EXPECTED OUTCOME| ACTION | RESULT |
