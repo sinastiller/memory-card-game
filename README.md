@@ -1,5 +1,5 @@
 # Stranger Things Memory Card Game
-Stranger Things Memory Card Game is desigend for young and old. The goal of the game is to have found all the matching cars within the provided moves available to the user. Each move includes 2 cards being clicked on to find the according match to the first card. If successfull, the player gets to pick another two card without loosing any player moves. If not successful, a moves will be substracted and the player keeps on going to find two machting cards. The game is over once all the moves have been used or all the cards were matched to each other.
+Stranger Things Memory Card Game is designed for young and old. The goal of the game is to have found all the matching cards within the provided moves available to the user. Each move includes 2 cards being clicked on to find the acording match to the first card. If successful, the player gets to pick another two cards without loosing any player moves. If not successful, one move will be substracted and the player keeps on going to find two machting cards. The game is over once all the moves have been used or all the cards were matched to each other.
 
 ![Am I responsive](readme-images/responsiveness.png)
 
@@ -49,11 +49,11 @@ The Stranger Things Memory Card Game is sloley for pleasure and fun, a game for 
 
 ![colorpalette](readme-images/colourpalette_strangerthings.png)
 
-[Adobe Color](https://color.adobe.com/Stranger-Things-color-theme-10253565/) was used to create a color palette for the theme Stranger Things. It uses mainly bright dark colours.
+[Adobe Color](https://color.adobe.com/Stranger-Things-color-theme-10253565/) was used to create a colour palette for the theme Stranger Things. It uses mainly bright dark colours.
 
 ### [Typography](#typography)
 
-I habve imported the following font from Adobe Fonts:
+I habe imported the following font from Adobe Fonts:
 * ITC- Benguiat for the main heading on the page.
 I have imported the follwoing fonts from Google Fonts:
 * Play for h2 on the page.
@@ -61,7 +61,7 @@ I have imported the follwoing fonts from Google Fonts:
 
 ### [Imagery](#imagery) 
 
-The imagery used for the cards are portraits of character from the Netflix series and are credited below in the section [Credits](#credits).
+The imagery used for the cards are portraits of characters from the Netflix series and are credited below in the section [Credits](#credits).
 
 ### [Wireframes](#wireframes)
 I have used [Adobe XD](https://www.adobe.com/ie/products/xd.html) to create the wireframe for my Memory Card Game. It should have the main title at the top of the page, followed by the number of moves a user has left to find matching cards. Below this section you will find the cards, the user will flip. Between the card-section and the footer will be the result shown to the user, if they have won or lost the game.
@@ -75,30 +75,30 @@ This is my inital approach towards my project, which might change during the pro
 ### [General features on each page](#general-features-on-each-page)
 
 The website is a one-page page containing:
-* a prompt() when loading the page for the user to input their name.
+* a prompt() when loading the page for the user to input their name
 * the main heading on the top followed by the player's moves
-* the game-section in the  middle of the page
+* the game-section in the middle of the page
 * the footer at the bottom
-* an alert() with a message if the game was won or lost and containing the stored username.
+* an alert() with a message if the game was won or lost and containing the stored username
 
 #### prompt()
 
 ![prompt() user input](readme-images/prompt().png) 
 
-When loading the page, user is required to insert a username to be able to play the game, which is the stored for later use. The user can also find a quick explanation what the goal of the game is.
+When loading the page, user is required to insert a username to be able to play the game, which is then stored for later use. The user can also find a quick explanation what the goal of the game is.
 
 #### Top of Page
 
 ![Top of page](readme-images/top.page.png)
 
-At the top of the page to can find the title of the memory card game, which has been designed in the actual font Stranger Things are using and is placed at the top center of the page. Below you can find the player's moves count, which deductes 1 at a time if the player doesn't find to matching cards and finishes at 0, at which point the game will be over.
+At the top of the page you can find the title of the memory card game, which has been designed in the actual font Stranger Things are using and is placed at the top center of the page. Below you can find the player's moves count, which deductes 1 at a time if the player doesn't find two matching cards and finishes at 0, at which point the game will be over.
 
 #### Game Section
 
 ![Game Section](readme-images/game-section.png)
 
-In the middle of the page is the game-section located with all the 16 cards. The deck contains the imprint of Stranger Things and the portraits of the characters are able to be seen when the card is turned around. Each time the game is restarted the deck will be shuffled randomly, so that the player can enjoy a few rounds of the card game without knowing the postion of the cards.
-Once two cards are matched with each other, they will stay face open and aren't clickable anymore. If it wasn't a match, the cards will turn back around and clickable on the next move again.
+In the middle of the page is the game-section located with all the 16 cards. The deck contains the imprint of Stranger Things and the portraits of the characters are able to be seen when the card is turned around. Each time the game is restarted the deck will be shuffled randomly, so that the player can enjoy a few rounds of the card game without knowing the position of the cards.
+Once two cards are matched with each other, they will stay face open and aren't clickable anymore. If it wasn't a match, the cards will turn back around and be clickable on the next move again.
 
 #### alert()
 
@@ -106,7 +106,7 @@ Once two cards are matched with each other, they will stay face open and aren't 
 
 ![alert() loose game](readme-images/alert().loose.png)
 
-At the end of each game there will be an alert() window including the user'name stating, if the game was won or lost. Once the "Ok" button was clicked, the game will restart.
+At the end of each game there will be an alert() window including the user's name stating, if the game was won or lost. Once the "Ok" button was clicked, the game will restart.
 
 #### Footer
 

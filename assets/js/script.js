@@ -1,16 +1,15 @@
 //User Input when page loaded
 
-let username = prompt("Welcome to the Stranger Things Memory Card Game! 🃏 \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! 👑 \n\nTo proceed please enter your Name: ");
-
+let username;
 
 function requiredInput () {
     do {
         username = prompt("Welcome to the Stranger Things Memory Card Game! 🃏 \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! 👑 \n\nTo proceed please enter your Name: ");
     }
     while (username.length < 2);
-    document.getElementById("myinput").value = username
+    document.getElementById("myinput").value = username;
 
-    }
+    };
  requiredInput();
 
 // Gathering the moves a player has left
