@@ -108,15 +108,25 @@ footer {
 
 /* Screen-sizes up to 2000px */
 @media screen and (max-width:2000px) {
-    /* body{
+    html{
         height: 100vh;
-    } */
+    }
     h1 {
         margin: 1rem auto;
         padding: 0;
     }
     section{
-        margin: 4rem auto
+        margin: 2rem auto
+    }
+}
+/* Screen-sizes up to 1401px */
+@media screen and (max-width:1401px) {
+    h1 {
+        margin: 1rem auto;
+        padding: 0;
+    }
+    section{
+        margin: 2rem auto
     }
 }
 
@@ -133,29 +143,42 @@ footer {
     h1{
         font-size: 2.5rem;
     }
-}
-
-/*Screen-sizes up to 525px */
-@media screen and (max-width:525px) {
-    h1{
-        font-size: 2.2rem;
-    }
-    section{
-        grid-template-columns: repeat(4, 4rem);
-        grid-template-rows: repeat(4,6rem);
-    }
     footer{
         font-size: 0.9rem;
     }
 }
-/*Screen-sizes up to 375px */
-@media screen and (max-width:375px) {
+
+/*Screen-sizes up to 400px */
+@media screen and (max-width:400px) {
     /* body{
         height: 100%;
     } */
     section{
-        margin: 0.2rem auto;
+        margin: 1.5rem auto;
         grid-row-gap: 0.3rem;
+        grid-column-gap: 1.2rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 0.7rem;
+    }
+}
+
+/*Screen-sizes up to 332px */
+@media screen and (max-width: 332px) {
+    h1{
+        font-size: 1.8rem;
+    }
+    section{
+        margin: 2rem auto;
+        grid-template-columns: repeat(4, 4rem);
+        grid-template-rows: repeat(4,6rem);
+        grid-row-gap: 0.5rem;
         grid-column-gap: 1.2rem;
     }
     h2{
