@@ -28,67 +28,67 @@ let alt = document.createAttribute("alt");
 
 // Generating the image data
 const imageData = [{
-        imgSrc: "../images/billy.png",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/billy.webp",
         name: "billy"
     },
     {
-        imgSrc: "../images/dustin.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/dustin.webp",
         name: "dustin"
     },
     {
-        imgSrc: "../images/eleven.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/eleven.webp",
         name: "eleven"
     },
     {
-        imgSrc: "../images/lucas.webp",
+        imgSrc: "../assets/images/lucas.webp",
         name: "lucas"
     },
     {
-        imgSrc: "../images/max.webp",
+        imgSrc: "../assets/images/max.webp",
         name: "max"
     },
     {
-        imgSrc: "../images/mike.webp",
+        imgSrc: "../assets/images/mike.webp",
         name: "mike"
     },
     {
-        imgSrc: "../images/steve.webp",
+        imgSrc: "../assets/images/steve.webp",
         name: "steve"
     },
     {
-        imgSrc: "../images/will.webp",
+        imgSrc: "../assets/images/will.webp",
         name: "will"
     },
     {
-        imgSrc: "../images/billy.png",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/billy.webp",
         name: "billy"
     },
     {
-        imgSrc: "../images/dustin.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/dustin.webp",
         name: "dustin"
     },
     {
-        imgSrc: "../images/eleven.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/eleven.webp",
         name: "eleven"
     },
     {
-        imgSrc: "../images/lucas.webp",
+        imgSrc: "../assets/images/lucas.webp",
         name: "lucas"
     },
     {
-        imgSrc: "../images/max.webp",
+        imgSrc: "../assets/images/max.webp",
         name: "max"
     },
     {
-        imgSrc: "../images/mike.webp",
+        imgSrc: "../assets/images/mike.webp",
         name: "mike"
     },
     {
-        imgSrc: "../images/steve.webp",
+        imgSrc: "../assets/images/steve.webp",
         name: "steve"
     },
     {
-        imgSrc: "../images/will.webp",
+        imgSrc: "../assets/images/will.webp",
         name: "will"
     },
 ];
