@@ -194,6 +194,7 @@ Please find the carried out testing on [TESTING.md](TESTING.md).
 * [W3School](https://www.w3schools.com/jsreF/met_win_prompt.asp) was referred to when creating the prompt().
 * [Learn Vanilla Javascript: Memory Game Tutorial](https://www.youtube.com/watch?v=eMhiMsEC9Uk&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw&index=1) was referenced throughout the page.
 * [Awesome Vanilla JavaScript Memory Card Game Tutorial](https://www.youtube.com/watch?v=-tlb4tv4mC4) was referenced throughout the page.
+* [Stackoverflow](https://stackoverflow.com/questions/55718279/prompt-to-enter-name-into-input) to acchieve requiredInput().
 
 ## [Content](#content)
 
