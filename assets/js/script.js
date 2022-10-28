@@ -28,7 +28,7 @@ let alt = document.createAttribute("alt");
 
 // Generating the image data
 const imageData = [{
-        imgSrc: "../images/billy.webp",
+        imgSrc: "../images/billy.png",
         name: "billy"
     },
     {
@@ -60,7 +60,7 @@ const imageData = [{
         name: "will"
     },
     {
-        imgSrc: "../images/billy.webp",
+        imgSrc: "../images/billy.png",
         name: "billy"
     },
     {
