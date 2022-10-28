@@ -1,12 +1,13 @@
 //User Input when page loaded
 
 let username = prompt("Welcome to the Stranger Things Memory Card Game! 🃏 \n\nThe goal of this game is to find two matching cards using fewer moves than are provided to win it! 👑 \n\nTo proceed please enter your Name: ");
+let txt;
 
 function requiredInput() {
     if (username === null || username === "") {
         return requiredInput();
     } else {
-        txt = "Good Luck, " + username + " !"
+       txt = "Good Luck, " + username + " !";
     }
     alert(txt);
 }
@@ -27,67 +28,67 @@ let alt = document.createAttribute("alt");
 
 // Generating the image data
 const imageData = [{
-        imgSrc: "../assets/images/billy.webp",
+        imgSrc: "../images/billy.webp",
         name: "billy"
     },
     {
-        imgSrc: "../assets/images/dustin.webp",
+        imgSrc: "../images/dustin.webp",
         name: "dustin"
     },
     {
-        imgSrc: "../assets/images/eleven.webp",
+        imgSrc: "../images/eleven.webp",
         name: "eleven"
     },
     {
-        imgSrc: "../assets/images/lucas.webp",
+        imgSrc: "../images/lucas.webp",
         name: "lucas"
     },
     {
-        imgSrc: "../assets/images/max.webp",
+        imgSrc: "../images/max.webp",
         name: "max"
     },
     {
-        imgSrc: "../assets/images/mike.webp",
+        imgSrc: "../images/mike.webp",
         name: "mike"
     },
     {
-        imgSrc: "../assets/images/steve.webp",
+        imgSrc: "../images/steve.webp",
         name: "steve"
     },
     {
-        imgSrc: "../assets/images/will.webp",
+        imgSrc: "../images/will.webp",
         name: "will"
     },
     {
-        imgSrc: "../assets/images/billy.webp",
+        imgSrc: "../images/billy.webp",
         name: "billy"
     },
     {
-        imgSrc: "../assets/images/dustin.webp",
+        imgSrc: "../images/dustin.webp",
         name: "dustin"
     },
     {
-        imgSrc: "../assets/images/eleven.webp",
+        imgSrc: "../images/eleven.webp",
         name: "eleven"
     },
     {
-        imgSrc: "../assets/images/lucas.webp",
+        imgSrc: "../images/lucas.webp",
         name: "lucas"
     },
     {
-        imgSrc: "../assets/images/max.webp",
+        imgSrc: "../images/max.webp",
         name: "max"
     },
     {
-        imgSrc: "../assets/images/mike.webp",
+        imgSrc: "../images/mike.webp",
         name: "mike"
     },
     {
-        imgSrc: "../assets/images/steve.webp",
+        imgSrc: "../images/steve.webp",
         name: "steve"
     },
     {
-        imgSrc: "../assets/images/will.webp",
+        imgSrc: "../images/will.webp",
         name: "will"
     },
 ];
@@ -104,7 +105,7 @@ function randomizeData() {
 
     return cardData;
 
-};
+}
 
 //Create Game Board Function
 /**
@@ -147,7 +148,7 @@ let secureBoard = false;
 
 
 function flipCard() {
-    const winGame = document.querySelectorAll('.flipCard')
+    const winGame = document.querySelectorAll('.flipCard');
 
     // only turn two cards at a time
     if (secureBoard) return;
@@ -205,15 +206,15 @@ function checkForMatch() {
                 restartGame(`🫣 So close, ${username}! \nPlay another round to try your luck!🍀`);
             }, 1000);
         }
-    };
+    }
 
     // If user wins
     if (winGame.length === 16) {
         // console.log('congrats!')
         restartGame(`🥳 CONGRATULATIONS, ${username} YOU WON! 🤖 \nReady for another round?👀`);
-    };
+    }
 
-};
+}
 
 /**
  * Function prevents cards from flipping back, so they can't be clicked
@@ -249,7 +250,7 @@ function restoreCard() {
     secureBoard = false;
     firstCard = null;
     secondCard = null;
-};
+}
 
 cards.forEach(card => card.addEventListener("click", flipCard));
 
@@ -259,7 +260,7 @@ cards.forEach(card => card.addEventListener("click", flipCard));
 function restartGame(Text) {
     // pop up window with text at the end of the game
     setTimeout(() => {
-        window.alert(Text)
+        window.alert(Text);
     }, 150);
 
     let cardData = randomizeData();
@@ -279,4 +280,4 @@ function restartGame(Text) {
             playerMovesLeft.innerHTML = playerMoves;
         }, 1000);
     });
-};
+}

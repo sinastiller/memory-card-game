@@ -15,13 +15,16 @@
 
 ### [W3C Validator](#w3cvalidator)
 
-To verify that the HTML code is written in the correct structure, I tested each .html individually. There are currently no errors, as I have fixed these.
+* To verify that the HTML code is written in the correct structure, I tested each .html individually. There are currently no errors, as I have fixed these.
 
-![W3C Validator](readme-images/w3c.validator.png)
+    ![W3C Validator](readme-images/w3c.validator.png)
 
-To verify that the CSS code is written to the correct standards, I tested style.css using the W3C Jigsaw. There are currently no errors.
+* To verify that the CSS code is written to the correct standards, I tested style.css using the W3C Jigsaw. There are currently no errors.
 
-![CSS Validator](readme-images/css.validator.png)
+    ![CSS Validator](readme-images/css.validator.png)
+
+* [JSHint](https://jshint.com/) was used to validate script.js and returned no errors.
+    ![JSHint](readme-images/jshint.png)
 
 ### [Responsiveness](#responsivness)
 
