@@ -115,7 +115,7 @@ footer {
         margin: 1rem auto;
         padding: 0;
     }
-    section{
+    #game-section{
         margin: 2rem auto
     }
 }
@@ -125,7 +125,7 @@ footer {
         margin: 1rem auto;
         padding: 0;
     }
-    section{
+    #game-section{
         margin: 2rem auto
     }
 }
@@ -135,7 +135,7 @@ footer {
     body{
     margin: 1rem auto;
     }
-    section {
+    #game-section {
         grid-template-columns: repeat(4, 5rem);
         grid-template-rows: repeat(4,7rem);
         grid-row-gap: 1.5rem;
@@ -150,7 +150,7 @@ footer {
 
 /*Screen-sizes up to 400px */
 @media screen and (max-width:400px) {
-    section{
+    #game-section{
         margin: 1.5rem 1rem;
         grid-row-gap: 0.3rem;
         grid-column-gap: 1.2rem;
@@ -171,7 +171,7 @@ footer {
     h1{
         font-size: 1.8rem;
     }
-    section{
+    #game-section{
         margin: 2rem 1rem;
         grid-template-columns: repeat(4, 4rem);
         grid-template-rows: repeat(4,6rem);
