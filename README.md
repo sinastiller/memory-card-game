@@ -1,6 +1,8 @@
 # Stranger Things Memory Card Game
 Stranger Things Memory Card Game is desigend for young and old. The goal of the game is to have found all the matching cars within the provided moves available to the user. Each move includes 2 cards being clicked on to find the according match to the first card. If successfull, the player gets to pick another two card without loosing any player moves. If not successful, a moves will be substracted and the player keeps on going to find two machting cards. The game is over once all the moves have been used or all the cards were matched to each other.
 
+![Am I responsive](readme-images/responsiveness.png)
+
 ## Contents
 
 * [User Experience](#user-experience)
@@ -144,6 +146,7 @@ The footer is located at the bottom of the page and contains the copyright.
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to understand the EventTarget.addEventListener() method better.
 * [Adobe Fonts](https://fonts.adobe.com/fonts/itc-benguiat#fonts-section) to download the original Stranger Things font.
 * [FavIcon Generator](https://favicon.io/favicon-generator/) to generate the favicon used for my game page.
+* [Am I Responsive](https://ui.dev/amiresponsive) was used to create a shot to see responsiveness on different devices.
 
 ## [Deployment](#deployment)
 

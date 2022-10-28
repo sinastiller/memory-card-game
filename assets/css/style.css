@@ -150,9 +150,6 @@ footer {
 
 /*Screen-sizes up to 400px */
 @media screen and (max-width:400px) {
-    /* body{
-        height: 100%;
-    } */
     section{
         margin: 1.5rem 1rem;
         grid-row-gap: 0.3rem;
