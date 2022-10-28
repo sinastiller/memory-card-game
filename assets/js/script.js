@@ -40,23 +40,23 @@ const imageData = [{
         name: "eleven"
     },
     {
-        imgSrc: "../assets/images/lucas.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/lucas.webp",
         name: "lucas"
     },
     {
-        imgSrc: "../assets/images/max.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/max.webp",
         name: "max"
     },
     {
-        imgSrc: "../assets/images/mike.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/mike.webp",
         name: "mike"
     },
     {
-        imgSrc: "../assets/images/steve.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/steve.webp",
         name: "steve"
     },
     {
-        imgSrc: "../assets/images/will.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/will.webp",
         name: "will"
     },
     {
@@ -72,23 +72,23 @@ const imageData = [{
         name: "eleven"
     },
     {
-        imgSrc: "../assets/images/lucas.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/lucas.webp",
         name: "lucas"
     },
     {
-        imgSrc: "../assets/images/max.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/max.webp",
         name: "max"
     },
     {
-        imgSrc: "../assets/images/mike.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/mike.webp",
         name: "mike"
     },
     {
-        imgSrc: "../assets/images/steve.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/steve.webp",
         name: "steve"
     },
     {
-        imgSrc: "../assets/images/will.webp",
+        imgSrc: "https://raw.githubusercontent.com/sinastiller/memory-card-game/main/assets/images/will.webp",
         name: "will"
     },
 ];
