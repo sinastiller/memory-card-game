@@ -71,6 +71,7 @@ h3 {
 
 .card:active {
     transform: scale(.89);
+    transition: transform 2s;
 }
 
 .frontFace,
