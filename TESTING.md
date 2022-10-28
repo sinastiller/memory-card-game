@@ -1,4 +1,7 @@
-# TESTING FOR MEMORY CARD GAME
+# TESTING FOR STRANGER THINGS MEMORY CARD GAME
+
+![Am I responsive](readme-images/responsiveness.png)
+
 
 ## Contents
  * [Automated Testing](#automatedtesting)

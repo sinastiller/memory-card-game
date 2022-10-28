@@ -51,7 +51,7 @@ h3 {
     padding: 0.1rem auto;
 }
 
-section {
+#game-section {
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 6rem);
