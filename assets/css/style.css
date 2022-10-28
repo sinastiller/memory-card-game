@@ -93,7 +93,7 @@ section {
 .flipCard {
     transform: rotateY(180deg);
     /* for Safari browser */
-    -webkit-transform: rotateY(180deg);
+    /* -webkit-transform: rotateY(180deg); */
 }
 
 footer {
